@@ -12,8 +12,12 @@ A humane pest repeller designed to be extreamly annoying... to pests.  It beeps 
 * 12V power supply, 1A is more than enough
 
 # Schematic
+![Schematic](https://raw.githubusercontent.com/zymos/ultrasonic_pest_repeller-v2/main/schematic/pest_repeller-v2-schem_schem.png "schematic")
+
 
 # Code
+- https://github.com/zymos/ultrasonic_pest_repeller-v2/blob/main/src/main.c
+
 
 # References
-- Hearing ranges:  https://en.wikipedia.org/wiki/Hearing_range#/media/File:Animal_hearing_frequency_range.svg
+- Hearing ranges for various animals:  https://en.wikipedia.org/wiki/Hearing_range#/media/File:Animal_hearing_frequency_range.svg
