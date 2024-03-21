@@ -1,0 +1,1272 @@
+GAS LISTING /tmp/ccbi08xe.s 			page 1
+
+
+   1               		.file	"main.c"
+   2               	__SP_L__ = 0x3d
+   3               	__SREG__ = 0x3f
+   4               	__tmp_reg__ = 0
+   5               	__zero_reg__ = 1
+   6               		.stabs	"/home/zymos/Documents/Projects/Embedded/ultrasonic_pest_repeller-v2/src/",100,0,2,.Ltext0
+   7               		.stabs	"main.c",100,0,2,.Ltext0
+   8               		.text
+   9               	.Ltext0:
+  10               		.stabs	"gcc2_compiled.",60,0,0,0
+  11               		.stabs	"int:t(0,1)=r(0,1);-32768;32767;",128,0,0,0
+  12               		.stabs	"char:t(0,2)=@s8;r(0,2);0;255;",128,0,0,0
+  13               		.stabs	"long int:t(0,3)=@s32;r(0,3);020000000000;017777777777;",128,0,0,0
+  14               		.stabs	"unsigned int:t(0,4)=r(0,4);0;0177777;",128,0,0,0
+  15               		.stabs	"long unsigned int:t(0,5)=@s32;r(0,5);0;037777777777;",128,0,0,0
+  16               		.stabs	"__int128:t(0,6)=@s128;r(0,6);02000000000000000000000000000000000000000000;0177777777777777
+  17               		.stabs	"__int128 unsigned:t(0,7)=@s128;r(0,7);0;03777777777777777777777777777777777777777777;",128
+  18               		.stabs	"long long int:t(0,8)=@s64;r(0,8);01000000000000000000000;00777777777777777777777;",128,0,0
+  19               		.stabs	"long long unsigned int:t(0,9)=@s64;r(0,9);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"short int:t(0,10)=r(0,10);-32768;32767;",128,0,0,0
+  21               		.stabs	"short unsigned int:t(0,11)=r(0,11);0;0177777;",128,0,0,0
+  22               		.stabs	"signed char:t(0,12)=@s8;r(0,12);-128;127;",128,0,0,0
+  23               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  24               		.stabs	"float:t(0,14)=r(0,1);4;0;",128,0,0,0
+  25               		.stabs	"double:t(0,15)=r(0,1);4;0;",128,0,0,0
+  26               		.stabs	"long double:t(0,16)=r(0,1);4;0;",128,0,0,0
+  27               		.stabs	"short _Fract:t(0,17)=r(0,1);1;0;",128,0,0,0
+  28               		.stabs	"_Fract:t(0,18)=r(0,1);2;0;",128,0,0,0
+  29               		.stabs	"long _Fract:t(0,19)=r(0,1);4;0;",128,0,0,0
+  30               		.stabs	"long long _Fract:t(0,20)=r(0,1);8;0;",128,0,0,0
+  31               		.stabs	"unsigned short _Fract:t(0,21)=r(0,1);1;0;",128,0,0,0
+  32               		.stabs	"unsigned _Fract:t(0,22)=r(0,1);2;0;",128,0,0,0
+  33               		.stabs	"unsigned long _Fract:t(0,23)=r(0,1);4;0;",128,0,0,0
+  34               		.stabs	"unsigned long long _Fract:t(0,24)=r(0,1);8;0;",128,0,0,0
+  35               		.stabs	"_Sat short _Fract:t(0,25)=r(0,1);1;0;",128,0,0,0
+  36               		.stabs	"_Sat _Fract:t(0,26)=r(0,1);2;0;",128,0,0,0
+  37               		.stabs	"_Sat long _Fract:t(0,27)=r(0,1);4;0;",128,0,0,0
+  38               		.stabs	"_Sat long long _Fract:t(0,28)=r(0,1);8;0;",128,0,0,0
+  39               		.stabs	"_Sat unsigned short _Fract:t(0,29)=r(0,1);1;0;",128,0,0,0
+  40               		.stabs	"_Sat unsigned _Fract:t(0,30)=r(0,1);2;0;",128,0,0,0
+  41               		.stabs	"_Sat unsigned long _Fract:t(0,31)=r(0,1);4;0;",128,0,0,0
+  42               		.stabs	"_Sat unsigned long long _Fract:t(0,32)=r(0,1);8;0;",128,0,0,0
+  43               		.stabs	"short _Accum:t(0,33)=r(0,1);2;0;",128,0,0,0
+  44               		.stabs	"_Accum:t(0,34)=r(0,1);4;0;",128,0,0,0
+  45               		.stabs	"long _Accum:t(0,35)=r(0,1);8;0;",128,0,0,0
+  46               		.stabs	"long long _Accum:t(0,36)=r(0,1);8;0;",128,0,0,0
+  47               		.stabs	"unsigned short _Accum:t(0,37)=r(0,1);2;0;",128,0,0,0
+  48               		.stabs	"unsigned _Accum:t(0,38)=r(0,1);4;0;",128,0,0,0
+  49               		.stabs	"unsigned long _Accum:t(0,39)=r(0,1);8;0;",128,0,0,0
+  50               		.stabs	"unsigned long long _Accum:t(0,40)=r(0,1);8;0;",128,0,0,0
+  51               		.stabs	"_Sat short _Accum:t(0,41)=r(0,1);2;0;",128,0,0,0
+  52               		.stabs	"_Sat _Accum:t(0,42)=r(0,1);4;0;",128,0,0,0
+  53               		.stabs	"_Sat long _Accum:t(0,43)=r(0,1);8;0;",128,0,0,0
+  54               		.stabs	"_Sat long long _Accum:t(0,44)=r(0,1);8;0;",128,0,0,0
+  55               		.stabs	"_Sat unsigned short _Accum:t(0,45)=r(0,1);2;0;",128,0,0,0
+  56               		.stabs	"_Sat unsigned _Accum:t(0,46)=r(0,1);4;0;",128,0,0,0
+  57               		.stabs	"_Sat unsigned long _Accum:t(0,47)=r(0,1);8;0;",128,0,0,0
+GAS LISTING /tmp/ccbi08xe.s 			page 2
+
+
+  58               		.stabs	"_Sat unsigned long long _Accum:t(0,48)=r(0,1);8;0;",128,0,0,0
+  59               		.stabs	"void:t(0,49)=(0,49)",128,0,0,0
+  60               		.stabs	"/usr/lib/avr/include/avr/io.h",130,0,0,0
+  61               		.stabs	"/usr/lib/avr/include/avr/sfr_defs.h",130,0,0,0
+  62               		.stabs	"/usr/lib/avr/include/inttypes.h",130,0,0,0
+  63               		.stabs	"/usr/lib/gcc/avr/5.4.0/include/stdint.h",130,0,0,0
+  64               		.stabs	"/usr/lib/avr/include/stdint.h",130,0,0,0
+  65               		.stabs	"int8_t:t(5,1)=(0,12)",128,0,125,0
+  66               		.stabs	"uint8_t:t(5,2)=(0,13)",128,0,126,0
+  67               		.stabs	"int16_t:t(5,3)=(0,1)",128,0,127,0
+  68               		.stabs	"uint16_t:t(5,4)=(0,4)",128,0,128,0
+  69               		.stabs	"int32_t:t(5,5)=(0,3)",128,0,129,0
+  70               		.stabs	"uint32_t:t(5,6)=(0,5)",128,0,130,0
+  71               		.stabs	"int64_t:t(5,7)=(0,8)",128,0,132,0
+  72               		.stabs	"uint64_t:t(5,8)=(0,9)",128,0,133,0
+  73               		.stabs	"intptr_t:t(5,9)=(5,3)",128,0,146,0
+  74               		.stabs	"uintptr_t:t(5,10)=(5,4)",128,0,151,0
+  75               		.stabs	"int_least8_t:t(5,11)=(5,1)",128,0,163,0
+  76               		.stabs	"uint_least8_t:t(5,12)=(5,2)",128,0,168,0
+  77               		.stabs	"int_least16_t:t(5,13)=(5,3)",128,0,173,0
+  78               		.stabs	"uint_least16_t:t(5,14)=(5,4)",128,0,178,0
+  79               		.stabs	"int_least32_t:t(5,15)=(5,5)",128,0,183,0
+  80               		.stabs	"uint_least32_t:t(5,16)=(5,6)",128,0,188,0
+  81               		.stabs	"int_least64_t:t(5,17)=(5,7)",128,0,196,0
+  82               		.stabs	"uint_least64_t:t(5,18)=(5,8)",128,0,203,0
+  83               		.stabs	"int_fast8_t:t(5,19)=(5,1)",128,0,217,0
+  84               		.stabs	"uint_fast8_t:t(5,20)=(5,2)",128,0,222,0
+  85               		.stabs	"int_fast16_t:t(5,21)=(5,3)",128,0,227,0
+  86               		.stabs	"uint_fast16_t:t(5,22)=(5,4)",128,0,232,0
+  87               		.stabs	"int_fast32_t:t(5,23)=(5,5)",128,0,237,0
+  88               		.stabs	"uint_fast32_t:t(5,24)=(5,6)",128,0,242,0
+  89               		.stabs	"int_fast64_t:t(5,25)=(5,7)",128,0,250,0
+  90               		.stabs	"uint_fast64_t:t(5,26)=(5,8)",128,0,257,0
+  91               		.stabs	"intmax_t:t(5,27)=(5,7)",128,0,277,0
+  92               		.stabs	"uintmax_t:t(5,28)=(5,8)",128,0,282,0
+  93               		.stabn	162,0,0,0
+  94               		.stabn	162,0,0,0
+  95               		.stabs	"int_farptr_t:t(3,1)=(5,5)",128,0,77,0
+  96               		.stabs	"uint_farptr_t:t(3,2)=(5,6)",128,0,81,0
+  97               		.stabn	162,0,0,0
+  98               		.stabn	162,0,0,0
+  99               		.stabs	"/usr/lib/avr/include/avr/fuse.h",130,0,0,0
+ 100               		.stabs	"__fuse_t:t(6,1)=(6,2)=s2low:(0,13),0,8;high:(0,13),8,8;;",128,0,252,0
+ 101               		.stabn	162,0,0,0
+ 102               		.stabn	162,0,0,0
+ 103               		.stabs	"pwm_freq_change:F(0,49)",36,0,221,pwm_freq_change
+ 104               		.stabs	"mode:P(0,1)",64,0,221,24
+ 105               	.global	pwm_freq_change
+ 106               		.type	pwm_freq_change, @function
+ 107               	pwm_freq_change:
+ 108               		.stabd	46,0,0
+   1:main.c        **** /*
+   2:main.c        ****  * Animal Deturent Ultrasonic Beeper and Flasher
+   3:main.c        ****  *
+   4:main.c        ****  *    Description: really annoy (hopfully) for pests,
+   5:main.c        ****  *       random ultrasonic beeps, 2-tone, and flashes
+   6:main.c        ****  *       Code is for Attiny26, but should be easly modified to any AVR
+GAS LISTING /tmp/ccbi08xe.s 			page 3
+
+
+   7:main.c        ****  *    
+   8:main.c        ****  *    Credits: Zef the Tinker, 2023/11
+   9:main.c        ****  *
+  10:main.c        ****  */ 
+  11:main.c        **** 
+  12:main.c        **** // define the frequency
+  13:main.c        **** #define	F_CPU	1000000
+  14:main.c        **** #define 	XTAL   1000000
+  15:main.c        **** #define __AVR_ATtiny26__ 1 // to use other MCU you need to change this
+  16:main.c        **** 
+  17:main.c        **** // #include <stdlib.h>
+  18:main.c        **** #include <avr/io.h>
+  19:main.c        **** #include <util/delay.h>
+  20:main.c        **** #include <avr/interrupt.h>
+  21:main.c        **** 
+  22:main.c        **** 
+  23:main.c        **** 
+  24:main.c        **** /////////////////////////////////////////////////////////////////////////////
+  25:main.c        **** // Config
+  26:main.c        **** //
+  27:main.c        **** 
+  28:main.c        **** #define TIMED_BEEP_INTERVAL 10 // Timed auto-activate interval (minutes)
+  29:main.c        **** 
+  30:main.c        **** // Deterrent action is (20 beeps * NUM_OF_LOOPS) + (4 * LED_BLINK_CNT)
+  31:main.c        **** #define NUM_OF_LOOPS 5 // number of times to loop through beeps (20 beeps * NUM_OF_LOOPS)
+  32:main.c        **** #define LED_BLINK_CNT 5 // number of times led will blink
+  33:main.c        **** 
+  34:main.c        **** // DEBUGING:  Normal opperation is 0/0/0 
+  35:main.c        **** // #define DISABLE_IRQ 0 // disable interrupt for testing
+  36:main.c        **** #define ALL_ON 0 // LED and SPEAKER always on, no blinks
+  37:main.c        **** // #define CONSTANT_BEEPING 1 // ALWAYS beeps and flashes, no motion sense
+  38:main.c        **** 
+  39:main.c        **** 
+  40:main.c        **** /////////////////////////////////////////////////////////////////////////////
+  41:main.c        **** // PINS
+  42:main.c        **** //
+  43:main.c        **** //    if you use other MCU you need to change this
+  44:main.c        **** //
+  45:main.c        **** // Interrupts
+  46:main.c        **** //    - PC interrupt1: PB[7:4], PA[7:6], PA[3]
+  47:main.c        **** //    - PC interrupt0: PB[3:0]
+  48:main.c        **** //    - interrupt0: PB[6]
+  49:main.c        **** //
+  50:main.c        **** // Pinout
+  51:main.c        **** // 1 PB0 (MOSI/DI/SDA/OC1A/PCINT0/PROGRAMMER) [PROGRAMER]
+  52:main.c        **** // 2 PB1 (MISO/DO/OC1A/PCINT0/PROGRAMMER)     [PROGRAMER]
+  53:main.c        **** // 3 PB2 (SCK/SCL/OC1B/PCINT0/PROGRAMMER)     [PROGRAMER]
+  54:main.c        **** // 4 PB3 (OC1B/PCINT0)                        [X]
+  55:main.c        **** // 5 VCC
+  56:main.c        **** // 6 GND
+  57:main.c        **** // 7 PB4 (ADC7/XTAL1/PCINT1)             [X]
+  58:main.c        **** // 8 PB5 (ADC8/XTAL2/PCINT1)             [X]
+  59:main.c        **** // 9 PB6 (ADC9/INT0/T0/PCINT1)           [PIR1]
+  60:main.c        **** // 10 PB7 (ADC10/RESET/PCINT1/PROGRAMER) [PROGRAMER]
+  61:main.c        **** 
+  62:main.c        **** // 20 PA0 (ADC0)                        [MODE SWITCH] 
+  63:main.c        **** // 19 PA1 (ADC1)                        [X]
+GAS LISTING /tmp/ccbi08xe.s 			page 4
+
+
+  64:main.c        **** // 18 PA2 (ADC2)                        [X]  
+  65:main.c        **** // 17 PA3 (AREF/PCINT1)                 [PIR0 SENSOR]  
+  66:main.c        **** // 16 GND
+  67:main.c        **** // 15 AVCC
+  68:main.c        **** // 14 PA4 (ADC3)                        [MCU ACTIVE LED]
+  69:main.c        **** // 13 PA5 (ADC4)                        [LED FLASH]
+  70:main.c        **** // 12 PA6 (ADC5/AIN0/PCINT1)            [SPEAKER0]
+  71:main.c        **** // 11 PA7 (ADC6/AIN1/PCINT1)            [SPEAKER1]
+  72:main.c        **** //
+  73:main.c        **** // notes: Vih-min for pins 7,8 are 0.8Vcc, 
+  74:main.c        **** //   all others are 0.6Vcc
+  75:main.c        **** //   So at 5V pins 7,8 need to be >4.0V
+  76:main.c        **** //
+  77:main.c        **** #define PIN_SPEAK0 PA6 // ultra-sonic speaker0, output
+  78:main.c        **** #define PIN_SPEAK1 PA7 // ultra-sonic speaker1, output
+  79:main.c        **** 
+  80:main.c        **** #define PIN_LED0 PB4 // flashing LED, output, drives 40mA
+  81:main.c        **** #define PIN_LED1 PB5 // flashing LED, output, drives 40mA
+  82:main.c        **** 
+  83:main.c        **** // #define PIN_LED_PWR_ON PA4 // LED to indicate MCU is up and running, output
+  84:main.c        **** 
+  85:main.c        **** // #define PIN_MODE_SW PA0 // Mode switch
+  86:main.c        **** 
+  87:main.c        **** #define PIN_PIRA PA3 // PIR
+  88:main.c        **** #define PIN_PIRB PB6 // PIR
+  89:main.c        **** 
+  90:main.c        **** 
+  91:main.c        **** 
+  92:main.c        **** 
+  93:main.c        **** 
+  94:main.c        **** 
+  95:main.c        **** //////////////////////////////////////////////////////////////////////////////
+  96:main.c        **** // Global vars
+  97:main.c        **** //
+  98:main.c        **** 
+  99:main.c        **** long time_counter = 0; // for timed auto activate interval
+ 100:main.c        **** 
+ 101:main.c        **** // #define MINUTE_FUDGE_FACTOR 1357000 //60 * 226000 ish
+ 102:main.c        **** 
+ 103:main.c        **** #define sleep_delay_multi 500 // multiplier for delay between auto-activate
+ 104:main.c        **** 
+ 105:main.c        **** #define LOOP_DELAY 100 // microseconds
+ 106:main.c        **** 
+ 107:main.c        **** #define delay_multi 15 // multiplier for the 1ms delay
+ 108:main.c        **** 
+ 109:main.c        **** // RANDOM beep durrations (psuedo-random)
+ 110:main.c        **** const int beep_length[20] = {11,72,38,42,65,22,47,88,22,56
+ 111:main.c        ****                               ,9,55,12,77,41,99,88,10,30,50 }; // list of random duration
+ 112:main.c        **** 
+ 113:main.c        **** 
+ 114:main.c        **** // int speak0 = 0; // speaker 0 is on
+ 115:main.c        **** // int speak1 = 0; // speaker 1 is on
+ 116:main.c        **** 
+ 117:main.c        **** //////////////////////////////////////////////////////////////////////////////
+ 118:main.c        **** // Code
+ 119:main.c        **** //
+ 120:main.c        **** 
+GAS LISTING /tmp/ccbi08xe.s 			page 5
+
+
+ 121:main.c        **** 
+ 122:main.c        **** // make sure the freq isnt redefine, not sure if needed
+ 123:main.c        **** #ifdef F_CPU
+ 124:main.c        ****    #undef F_CPU
+ 125:main.c        **** #endif
+ 126:main.c        **** #define F_CPU	1000000
+ 127:main.c        **** 
+ 128:main.c        **** #ifdef XTAL
+ 129:main.c        ****    #undef XTAL
+ 130:main.c        **** #endif
+ 131:main.c        **** #define XTAL   1000000
+ 132:main.c        **** 
+ 133:main.c        **** 
+ 134:main.c        **** 
+ 135:main.c        **** 
+ 136:main.c        **** //////////////////////////////
+ 137:main.c        **** // Primatives
+ 138:main.c        **** //
+ 139:main.c        **** 
+ 140:main.c        **** void pwm_freq_change(int);
+ 141:main.c        **** void animal_det(void);
+ 142:main.c        **** void initialize(void);
+ 143:main.c        **** 
+ 144:main.c        **** 
+ 145:main.c        **** 
+ 146:main.c        **** 
+ 147:main.c        **** //////////////////////////////
+ 148:main.c        **** // Animal Deturent function
+ 149:main.c        **** //    beeps and flashes, 
+ 150:main.c        **** //    psuedo random durration and pauses
+ 151:main.c        **** //    
+ 152:main.c        **** void animal_det(void){
+ 153:main.c        ****    // int pointer1 = 2; // used for speaker1 as random num list offset
+ 154:main.c        **** 
+ 155:main.c        ****    // repeat loops of array
+ 156:main.c        ****    for(int q=0; q<NUM_OF_LOOPS; q++){
+ 157:main.c        ****       // loop the psuedo-radom array
+ 158:main.c        ****       //  this beep for each number in array
+ 159:main.c        **** 
+ 160:main.c        ****       // change the PWM frequency
+ 161:main.c        ****       pwm_freq_change(q);
+ 162:main.c        **** 
+ 163:main.c        ****       // turn on/off PWM to make beeps
+ 164:main.c        ****       for(int x=0; x < sizeof(beep_length)/sizeof(beep_length[0]); x++){ //loop the array
+ 165:main.c        ****      
+ 166:main.c        ****          // Speakers
+ 167:main.c        ****          PORTA &= ~(1 << PIN_SPEAK0); //speaker 0 off
+ 168:main.c        ****          // PORTA &= ~(1 << PIN_SPEAK1); //speaker 1 off
+ 169:main.c        ****          TCCR1A &= ~(1<<COM1B1); // PWM off
+ 170:main.c        ****          // speak0 = 0;
+ 171:main.c        ****          // speak1 = 0;
+ 172:main.c        ****          for(int n=0; n<100; n++){ //on/off period
+ 173:main.c        ****             // if(pointer1 == 10){ // for ponter1 offset
+ 174:main.c        ****                // pointer1 = 0;
+ 175:main.c        ****             // }
+ 176:main.c        ****             if(n > beep_length[x]){
+ 177:main.c        ****                PORTA |= (1 << PIN_SPEAK0); //speaker 0 on
+GAS LISTING /tmp/ccbi08xe.s 			page 6
+
+
+ 178:main.c        ****                TCCR1A |= (1<<COM1B1); // PWM on
+ 179:main.c        ****                // speak0 = 1;
+ 180:main.c        ****             }
+ 181:main.c        ****             // if(n > beep_length[pointer1]){
+ 182:main.c        ****                // PORTA |= (1 << PIN_SPEAK1); //speaker 1 on
+ 183:main.c        ****                // speak1 = 1;
+ 184:main.c        ****             // }
+ 185:main.c        ****             _delay_ms(3 * delay_multi/10); 
+ 186:main.c        ****          }   
+ 187:main.c        **** 
+ 188:main.c        ****          //LED
+ 189:main.c        ****          if(x % 2 == 0){ // activate LED every N beeps
+ 190:main.c        ****             for(int p=0; p<LED_BLINK_CNT; p++){
+ 191:main.c        ****                PORTB |= (1 << PIN_LED0); //led on
+ 192:main.c        ****                PORTB |= (1 << PIN_LED1); //led on
+ 193:main.c        ****                _delay_ms(1 * delay_multi); 
+ 194:main.c        ****                PORTB &= ~(1 << PIN_LED0); //led off
+ 195:main.c        ****                PORTB &= ~(1 << PIN_LED1); //led off
+ 196:main.c        ****                _delay_ms(1 * delay_multi);
+ 197:main.c        ****             }
+ 198:main.c        ****          }
+ 199:main.c        **** 
+ 200:main.c        ****          // inc pointer for speaker1
+ 201:main.c        ****          // pointer1++;
+ 202:main.c        ****       }
+ 203:main.c        ****       
+ 204:main.c        ****       // turn everything off
+ 205:main.c        ****       PORTB &= ~(1 << PIN_LED0); //led 0 off
+ 206:main.c        ****       PORTA &= ~(1 << PIN_SPEAK0); //speaker 0 off
+ 207:main.c        ****       TCCR1A &= ~(1<<COM1B1); // PWM off
+ 208:main.c        ****       // PORTA &= ~(1 << PIN_SPEAK1); //speaker 1 off
+ 209:main.c        ****       // speak0 = 0;
+ 210:main.c        ****       // speak1 = 0;
+ 211:main.c        **** 
+ 212:main.c        ****       _delay_ms(50 * delay_multi);
+ 213:main.c        ****    }
+ 214:main.c        **** }
+ 215:main.c        **** 
+ 216:main.c        **** 
+ 217:main.c        **** ////////////////////////////
+ 218:main.c        **** // Frequency changing
+ 219:main.c        **** //   changing PWM frequency to psuedo random list
+ 220:main.c        **** //
+ 221:main.c        **** void pwm_freq_change(int mode){
+ 109               		.stabn	68,0,221,.LM0-.LFBB1
+ 110               	.LM0:
+ 111               	.LFBB1:
+ 112               	/* prologue: function */
+ 113               	/* frame size = 0 */
+ 114               	/* stack size = 0 */
+ 115               	.L__stack_usage = 0
+ 222:main.c        ****    if(mode == 0){
+ 116               		.stabn	68,0,222,.LM1-.LFBB1
+ 117               	.LM1:
+ 118 0000 0097      		sbiw r24,0
+ 119 0002 01F4      		brne .L2
+ 223:main.c        ****       /* 30kHz - 0101 132; */
+GAS LISTING /tmp/ccbi08xe.s 			page 7
+
+
+ 224:main.c        ****       TCCR1B |= (1<<CS10);
+ 120               		.stabn	68,0,224,.LM2-.LFBB1
+ 121               	.LM2:
+ 122 0004 8FB5      		in r24,0x2f
+ 123 0006 8160      		ori r24,lo8(1)
+ 124 0008 8FBD      		out 0x2f,r24
+ 225:main.c        ****       OCR1C = 132;
+ 125               		.stabn	68,0,225,.LM3-.LFBB1
+ 126               	.LM3:
+ 127 000a 84E8      		ldi r24,lo8(-124)
+ 128 000c 00C0      		rjmp .L9
+ 129               	.L2:
+ 226:main.c        ****       OCR1B = 50; //65;
+ 227:main.c        ****    }else if (mode == 1)
+ 130               		.stabn	68,0,227,.LM4-.LFBB1
+ 131               	.LM4:
+ 132 000e 8130      		cpi r24,1
+ 133 0010 9105      		cpc r25,__zero_reg__
+ 134 0012 01F4      		brne .L4
+ 228:main.c        ****    {
+ 229:main.c        ****       /* 40kHz - 0100 199 */
+ 230:main.c        ****       TCCR1B &= ~(1<<CS10);
+ 135               		.stabn	68,0,230,.LM5-.LFBB1
+ 136               	.LM5:
+ 137 0014 8FB5      		in r24,0x2f
+ 138 0016 8E7F      		andi r24,lo8(-2)
+ 139 0018 8FBD      		out 0x2f,r24
+ 231:main.c        ****       OCR1C = 199;   
+ 140               		.stabn	68,0,231,.LM6-.LFBB1
+ 141               	.LM6:
+ 142 001a 87EC      		ldi r24,lo8(-57)
+ 143 001c 8BBD      		out 0x2b,r24
+ 232:main.c        ****       OCR1B = 80; //100;
+ 144               		.stabn	68,0,232,.LM7-.LFBB1
+ 145               	.LM7:
+ 146 001e 80E5      		ldi r24,lo8(80)
+ 147 0020 00C0      		rjmp .L8
+ 148               	.L4:
+ 233:main.c        ****    }else if (mode == 2)
+ 149               		.stabn	68,0,233,.LM8-.LFBB1
+ 150               	.LM8:
+ 151 0022 8230      		cpi r24,2
+ 152 0024 9105      		cpc r25,__zero_reg__
+ 153 0026 01F4      		brne .L5
+ 234:main.c        ****    {
+ 235:main.c        ****       /* 37kHz - 0101 110; */
+ 236:main.c        ****       TCCR1B |= (1<<CS10);
+ 154               		.stabn	68,0,236,.LM9-.LFBB1
+ 155               	.LM9:
+ 156 0028 8FB5      		in r24,0x2f
+ 157 002a 8160      		ori r24,lo8(1)
+ 158 002c 8FBD      		out 0x2f,r24
+ 237:main.c        ****       OCR1C = 110;
+ 159               		.stabn	68,0,237,.LM10-.LFBB1
+ 160               	.LM10:
+ 161 002e 8EE6      		ldi r24,lo8(110)
+ 162 0030 00C0      		rjmp .L10
+GAS LISTING /tmp/ccbi08xe.s 			page 8
+
+
+ 163               	.L5:
+ 238:main.c        ****       OCR1B = 45;//; //55;
+ 239:main.c        ****    }else if (mode == 3)
+ 164               		.stabn	68,0,239,.LM11-.LFBB1
+ 165               	.LM11:
+ 166 0032 8330      		cpi r24,3
+ 167 0034 9105      		cpc r25,__zero_reg__
+ 168 0036 01F4      		brne .L6
+ 240:main.c        ****    {
+ 241:main.c        ****       /* 50kHz - 0100 159 */
+ 242:main.c        ****       TCCR1B &= ~(1<<CS10);
+ 169               		.stabn	68,0,242,.LM12-.LFBB1
+ 170               	.LM12:
+ 171 0038 8FB5      		in r24,0x2f
+ 172 003a 8E7F      		andi r24,lo8(-2)
+ 173 003c 8FBD      		out 0x2f,r24
+ 243:main.c        ****       OCR1C = 159;   
+ 174               		.stabn	68,0,243,.LM13-.LFBB1
+ 175               	.LM13:
+ 176 003e 8FE9      		ldi r24,lo8(-97)
+ 177 0040 8BBD      		out 0x2b,r24
+ 244:main.c        ****       OCR1B = 70; //80;
+ 178               		.stabn	68,0,244,.LM14-.LFBB1
+ 179               	.LM14:
+ 180 0042 86E4      		ldi r24,lo8(70)
+ 181 0044 00C0      		rjmp .L8
+ 182               	.L6:
+ 245:main.c        ****    }else if (mode == 4)
+ 183               		.stabn	68,0,245,.LM15-.LFBB1
+ 184               	.LM15:
+ 185 0046 0497      		sbiw r24,4
+ 186 0048 01F4      		brne .L7
+ 187               	.LBB18:
+ 188               	.LBB19:
+ 246:main.c        ****    {
+ 247:main.c        ****       /* 39kHz - 0101 110; */
+ 248:main.c        ****       TCCR1B |= (1<<CS10);
+ 189               		.stabn	68,0,248,.LM16-.LFBB1
+ 190               	.LM16:
+ 191 004a 8FB5      		in r24,0x2f
+ 192 004c 8160      		ori r24,lo8(1)
+ 193 004e 8FBD      		out 0x2f,r24
+ 249:main.c        ****       OCR1C = 120;
+ 194               		.stabn	68,0,249,.LM17-.LFBB1
+ 195               	.LM17:
+ 196 0050 88E7      		ldi r24,lo8(120)
+ 197               	.L10:
+ 198 0052 8BBD      		out 0x2b,r24
+ 250:main.c        ****       OCR1B = 45; //55;
+ 199               		.stabn	68,0,250,.LM18-.LFBB1
+ 200               	.LM18:
+ 201 0054 8DE2      		ldi r24,lo8(45)
+ 202 0056 00C0      		rjmp .L8
+ 203               	.L7:
+ 204               	.LBE19:
+ 205               	.LBE18:
+ 251:main.c        ****    }else{
+GAS LISTING /tmp/ccbi08xe.s 			page 9
+
+
+ 252:main.c        ****       /* shouldn't happen but... ~30kHz - 0101 132; */
+ 253:main.c        ****       TCCR1B |= (1<<CS10);
+ 206               		.stabn	68,0,253,.LM19-.LFBB1
+ 207               	.LM19:
+ 208 0058 8FB5      		in r24,0x2f
+ 209 005a 8160      		ori r24,lo8(1)
+ 210 005c 8FBD      		out 0x2f,r24
+ 254:main.c        ****       OCR1C = 120;
+ 211               		.stabn	68,0,254,.LM20-.LFBB1
+ 212               	.LM20:
+ 213 005e 88E7      		ldi r24,lo8(120)
+ 214               	.L9:
+ 215 0060 8BBD      		out 0x2b,r24
+ 255:main.c        ****       OCR1B = 50; //60;
+ 216               		.stabn	68,0,255,.LM21-.LFBB1
+ 217               	.LM21:
+ 218 0062 82E3      		ldi r24,lo8(50)
+ 219               	.L8:
+ 220 0064 8CBD      		out 0x2c,r24
+ 221 0066 0895      		ret
+ 222               		.size	pwm_freq_change, .-pwm_freq_change
+ 223               	.Lscope1:
+ 224               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 225               		.stabd	78,0,0
+ 226               		.stabs	"animal_det:F(0,49)",36,0,152,animal_det
+ 227               	.global	animal_det
+ 228               		.type	animal_det, @function
+ 229               	animal_det:
+ 230               		.stabd	46,0,0
+ 152:main.c        ****    // int pointer1 = 2; // used for speaker1 as random num list offset
+ 231               		.stabn	68,0,152,.LM22-.LFBB2
+ 232               	.LM22:
+ 233               	.LFBB2:
+ 234 0068 CF93      		push r28
+ 235 006a DF93      		push r29
+ 236               	/* prologue: function */
+ 237               	/* frame size = 0 */
+ 238               	/* stack size = 2 */
+ 239               	.L__stack_usage = 2
+ 240               	.LBB20:
+ 156:main.c        ****       // loop the psuedo-radom array
+ 241               		.stabn	68,0,156,.LM23-.LFBB2
+ 242               	.LM23:
+ 243 006c C0E0      		ldi r28,0
+ 244 006e D0E0      		ldi r29,0
+ 245               	.L20:
+ 161:main.c        **** 
+ 246               		.stabn	68,0,161,.LM24-.LFBB2
+ 247               	.LM24:
+ 248 0070 8C2F      		mov r24,r28
+ 249 0072 9D2F      		mov r25,r29
+ 250 0074 00D0      		rcall pwm_freq_change
+ 251 0076 E0E0      		ldi r30,lo8(beep_length)
+ 252 0078 F0E0      		ldi r31,hi8(beep_length)
+ 253               	.LBB21:
+ 164:main.c        ****      
+ 254               		.stabn	68,0,164,.LM25-.LFBB2
+GAS LISTING /tmp/ccbi08xe.s 			page 10
+
+
+ 255               	.LM25:
+ 256 007a 80E0      		ldi r24,0
+ 257 007c 90E0      		ldi r25,0
+ 258               	.L13:
+ 164:main.c        ****      
+ 259               		.stabn	68,0,164,.LM26-.LFBB2
+ 260               	.LM26:
+ 261 007e 8431      		cpi r24,20
+ 262 0080 9105      		cpc r25,__zero_reg__
+ 263 0082 01F0      		breq .L24
+ 167:main.c        ****          // PORTA &= ~(1 << PIN_SPEAK1); //speaker 1 off
+ 264               		.stabn	68,0,167,.LM27-.LFBB2
+ 265               	.LM27:
+ 266 0084 DE98      		cbi 0x1b,6
+ 169:main.c        ****          // speak0 = 0;
+ 267               		.stabn	68,0,169,.LM28-.LFBB2
+ 268               	.LM28:
+ 269 0086 20B7      		in r18,0x30
+ 270 0088 2F7D      		andi r18,lo8(-33)
+ 271 008a 20BF      		out 0x30,r18
+ 272               	.LBB22:
+ 172:main.c        ****             // if(pointer1 == 10){ // for ponter1 offset
+ 273               		.stabn	68,0,172,.LM29-.LFBB2
+ 274               	.LM29:
+ 275 008c 20E0      		ldi r18,0
+ 276 008e 30E0      		ldi r19,0
+ 277               	.L15:
+ 176:main.c        ****                PORTA |= (1 << PIN_SPEAK0); //speaker 0 on
+ 278               		.stabn	68,0,176,.LM30-.LFBB2
+ 279               	.LM30:
+ 280 0090 4081      		ld r20,Z
+ 281 0092 5181      		ldd r21,Z+1
+ 282 0094 4217      		cp r20,r18
+ 283 0096 5307      		cpc r21,r19
+ 284 0098 04F4      		brge .L14
+ 177:main.c        ****                TCCR1A |= (1<<COM1B1); // PWM on
+ 285               		.stabn	68,0,177,.LM31-.LFBB2
+ 286               	.LM31:
+ 287 009a DE9A      		sbi 0x1b,6
+ 178:main.c        ****                // speak0 = 1;
+ 288               		.stabn	68,0,178,.LM32-.LFBB2
+ 289               	.LM32:
+ 290 009c 40B7      		in r20,0x30
+ 291 009e 4062      		ori r20,lo8(32)
+ 292 00a0 40BF      		out 0x30,r20
+ 293               	.L14:
+ 294               	.LBB23:
+ 295               	.LBB24:
+ 296               		.stabs	"/usr/lib/avr/include/util/delay.h",132,0,0,.Ltext1
+ 297               	.Ltext1:
+   1:/usr/lib/avr/include/util/delay.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+   2:/usr/lib/avr/include/util/delay.h ****    Copyright (c) 2004,2005,2007 Joerg Wunsch
+   3:/usr/lib/avr/include/util/delay.h ****    Copyright (c) 2007  Florin-Viorel Petrov
+   4:/usr/lib/avr/include/util/delay.h ****    All rights reserved.
+   5:/usr/lib/avr/include/util/delay.h **** 
+   6:/usr/lib/avr/include/util/delay.h ****    Redistribution and use in source and binary forms, with or without
+   7:/usr/lib/avr/include/util/delay.h ****    modification, are permitted provided that the following conditions are met:
+GAS LISTING /tmp/ccbi08xe.s 			page 11
+
+
+   8:/usr/lib/avr/include/util/delay.h **** 
+   9:/usr/lib/avr/include/util/delay.h ****    * Redistributions of source code must retain the above copyright
+  10:/usr/lib/avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer.
+  11:/usr/lib/avr/include/util/delay.h **** 
+  12:/usr/lib/avr/include/util/delay.h ****    * Redistributions in binary form must reproduce the above copyright
+  13:/usr/lib/avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer in
+  14:/usr/lib/avr/include/util/delay.h ****      the documentation and/or other materials provided with the
+  15:/usr/lib/avr/include/util/delay.h ****      distribution.
+  16:/usr/lib/avr/include/util/delay.h **** 
+  17:/usr/lib/avr/include/util/delay.h ****    * Neither the name of the copyright holders nor the names of
+  18:/usr/lib/avr/include/util/delay.h ****      contributors may be used to endorse or promote products derived
+  19:/usr/lib/avr/include/util/delay.h ****      from this software without specific prior written permission.
+  20:/usr/lib/avr/include/util/delay.h **** 
+  21:/usr/lib/avr/include/util/delay.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  22:/usr/lib/avr/include/util/delay.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  23:/usr/lib/avr/include/util/delay.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  24:/usr/lib/avr/include/util/delay.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  25:/usr/lib/avr/include/util/delay.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  26:/usr/lib/avr/include/util/delay.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  27:/usr/lib/avr/include/util/delay.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  28:/usr/lib/avr/include/util/delay.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  29:/usr/lib/avr/include/util/delay.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  30:/usr/lib/avr/include/util/delay.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  31:/usr/lib/avr/include/util/delay.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  32:/usr/lib/avr/include/util/delay.h **** 
+  33:/usr/lib/avr/include/util/delay.h **** /* $Id$ */
+  34:/usr/lib/avr/include/util/delay.h **** 
+  35:/usr/lib/avr/include/util/delay.h **** #ifndef _UTIL_DELAY_H_
+  36:/usr/lib/avr/include/util/delay.h **** #define _UTIL_DELAY_H_ 1
+  37:/usr/lib/avr/include/util/delay.h **** 
+  38:/usr/lib/avr/include/util/delay.h **** #ifndef __DOXYGEN__
+  39:/usr/lib/avr/include/util/delay.h **** #  ifndef __HAS_DELAY_CYCLES
+  40:/usr/lib/avr/include/util/delay.h **** #    define __HAS_DELAY_CYCLES 1
+  41:/usr/lib/avr/include/util/delay.h **** #  endif
+  42:/usr/lib/avr/include/util/delay.h **** #endif  /* __DOXYGEN__ */
+  43:/usr/lib/avr/include/util/delay.h **** 
+  44:/usr/lib/avr/include/util/delay.h **** #include <inttypes.h>
+  45:/usr/lib/avr/include/util/delay.h **** #include <util/delay_basic.h>
+  46:/usr/lib/avr/include/util/delay.h **** #include <math.h>
+  47:/usr/lib/avr/include/util/delay.h **** 
+  48:/usr/lib/avr/include/util/delay.h **** /** \file */
+  49:/usr/lib/avr/include/util/delay.h **** /** \defgroup util_delay <util/delay.h>: Convenience functions for busy-wait delay loops
+  50:/usr/lib/avr/include/util/delay.h ****     \code
+  51:/usr/lib/avr/include/util/delay.h ****     #define F_CPU 1000000UL  // 1 MHz
+  52:/usr/lib/avr/include/util/delay.h ****     //#define F_CPU 14.7456E6
+  53:/usr/lib/avr/include/util/delay.h ****     #include <util/delay.h>
+  54:/usr/lib/avr/include/util/delay.h ****     \endcode
+  55:/usr/lib/avr/include/util/delay.h **** 
+  56:/usr/lib/avr/include/util/delay.h ****     \note As an alternative method, it is possible to pass the
+  57:/usr/lib/avr/include/util/delay.h ****     F_CPU macro down to the compiler from the Makefile.
+  58:/usr/lib/avr/include/util/delay.h ****     Obviously, in that case, no \c \#define statement should be
+  59:/usr/lib/avr/include/util/delay.h ****     used.
+  60:/usr/lib/avr/include/util/delay.h **** 
+  61:/usr/lib/avr/include/util/delay.h ****     The functions in this header file are wrappers around the basic
+  62:/usr/lib/avr/include/util/delay.h ****     busy-wait functions from <util/delay_basic.h>.  They are meant as
+  63:/usr/lib/avr/include/util/delay.h ****     convenience functions where actual time values can be specified
+  64:/usr/lib/avr/include/util/delay.h ****     rather than a number of cycles to wait for.  The idea behind is
+GAS LISTING /tmp/ccbi08xe.s 			page 12
+
+
+  65:/usr/lib/avr/include/util/delay.h ****     that compile-time constant expressions will be eliminated by
+  66:/usr/lib/avr/include/util/delay.h ****     compiler optimization so floating-point expressions can be used
+  67:/usr/lib/avr/include/util/delay.h ****     to calculate the number of delay cycles needed based on the CPU
+  68:/usr/lib/avr/include/util/delay.h ****     frequency passed by the macro F_CPU.
+  69:/usr/lib/avr/include/util/delay.h **** 
+  70:/usr/lib/avr/include/util/delay.h ****     \note In order for these functions to work as intended, compiler
+  71:/usr/lib/avr/include/util/delay.h ****     optimizations <em>must</em> be enabled, and the delay time
+  72:/usr/lib/avr/include/util/delay.h ****     <em>must</em> be an expression that is a known constant at
+  73:/usr/lib/avr/include/util/delay.h ****     compile-time.  If these requirements are not met, the resulting
+  74:/usr/lib/avr/include/util/delay.h ****     delay will be much longer (and basically unpredictable), and
+  75:/usr/lib/avr/include/util/delay.h ****     applications that otherwise do not use floating-point calculations
+  76:/usr/lib/avr/include/util/delay.h ****     will experience severe code bloat by the floating-point library
+  77:/usr/lib/avr/include/util/delay.h ****     routines linked into the application.
+  78:/usr/lib/avr/include/util/delay.h **** 
+  79:/usr/lib/avr/include/util/delay.h ****     The functions available allow the specification of microsecond, and
+  80:/usr/lib/avr/include/util/delay.h ****     millisecond delays directly, using the application-supplied macro
+  81:/usr/lib/avr/include/util/delay.h ****     F_CPU as the CPU clock frequency (in Hertz).
+  82:/usr/lib/avr/include/util/delay.h **** 
+  83:/usr/lib/avr/include/util/delay.h **** */
+  84:/usr/lib/avr/include/util/delay.h **** 
+  85:/usr/lib/avr/include/util/delay.h **** #if !defined(__DOXYGEN__)
+  86:/usr/lib/avr/include/util/delay.h **** static __inline__ void _delay_us(double __us) __attribute__((__always_inline__));
+  87:/usr/lib/avr/include/util/delay.h **** static __inline__ void _delay_ms(double __ms) __attribute__((__always_inline__));
+  88:/usr/lib/avr/include/util/delay.h **** #endif
+  89:/usr/lib/avr/include/util/delay.h **** 
+  90:/usr/lib/avr/include/util/delay.h **** #ifndef F_CPU
+  91:/usr/lib/avr/include/util/delay.h **** /* prevent compiler error by supplying a default */
+  92:/usr/lib/avr/include/util/delay.h **** # warning "F_CPU not defined for <util/delay.h>"
+  93:/usr/lib/avr/include/util/delay.h **** /** \ingroup util_delay
+  94:/usr/lib/avr/include/util/delay.h ****     \def F_CPU
+  95:/usr/lib/avr/include/util/delay.h ****     \brief CPU frequency in Hz
+  96:/usr/lib/avr/include/util/delay.h **** 
+  97:/usr/lib/avr/include/util/delay.h ****     The macro F_CPU specifies the CPU frequency to be considered by
+  98:/usr/lib/avr/include/util/delay.h ****     the delay macros.  This macro is normally supplied by the
+  99:/usr/lib/avr/include/util/delay.h ****     environment (e.g. from within a project header, or the project's
+ 100:/usr/lib/avr/include/util/delay.h ****     Makefile).  The value 1 MHz here is only provided as a "vanilla"
+ 101:/usr/lib/avr/include/util/delay.h ****     fallback if no such user-provided definition could be found.
+ 102:/usr/lib/avr/include/util/delay.h **** 
+ 103:/usr/lib/avr/include/util/delay.h ****     In terms of the delay functions, the CPU frequency can be given as
+ 104:/usr/lib/avr/include/util/delay.h ****     a floating-point constant (e.g. 3.6864E6 for 3.6864 MHz).
+ 105:/usr/lib/avr/include/util/delay.h ****     However, the macros in <util/setbaud.h> require it to be an
+ 106:/usr/lib/avr/include/util/delay.h ****     integer value.
+ 107:/usr/lib/avr/include/util/delay.h ****  */
+ 108:/usr/lib/avr/include/util/delay.h **** # define F_CPU 1000000UL
+ 109:/usr/lib/avr/include/util/delay.h **** #endif
+ 110:/usr/lib/avr/include/util/delay.h **** 
+ 111:/usr/lib/avr/include/util/delay.h **** #ifndef __OPTIMIZE__
+ 112:/usr/lib/avr/include/util/delay.h **** # warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+ 113:/usr/lib/avr/include/util/delay.h **** #endif
+ 114:/usr/lib/avr/include/util/delay.h **** 
+ 115:/usr/lib/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 116:/usr/lib/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 117:/usr/lib/avr/include/util/delay.h ****   __STDC_HOSTED__
+ 118:/usr/lib/avr/include/util/delay.h **** #  include <math.h>
+ 119:/usr/lib/avr/include/util/delay.h **** #endif
+ 120:/usr/lib/avr/include/util/delay.h **** 
+ 121:/usr/lib/avr/include/util/delay.h **** /**
+GAS LISTING /tmp/ccbi08xe.s 			page 13
+
+
+ 122:/usr/lib/avr/include/util/delay.h ****    \ingroup util_delay
+ 123:/usr/lib/avr/include/util/delay.h **** 
+ 124:/usr/lib/avr/include/util/delay.h ****    Perform a delay of \c __ms milliseconds, using _delay_loop_2().
+ 125:/usr/lib/avr/include/util/delay.h **** 
+ 126:/usr/lib/avr/include/util/delay.h ****    The macro F_CPU is supposed to be defined to a
+ 127:/usr/lib/avr/include/util/delay.h ****    constant defining the CPU clock frequency (in Hertz).
+ 128:/usr/lib/avr/include/util/delay.h **** 
+ 129:/usr/lib/avr/include/util/delay.h ****    The maximal possible delay is 262.14 ms / F_CPU in MHz.
+ 130:/usr/lib/avr/include/util/delay.h **** 
+ 131:/usr/lib/avr/include/util/delay.h ****    When the user request delay which exceed the maximum possible one,
+ 132:/usr/lib/avr/include/util/delay.h ****    _delay_ms() provides a decreased resolution functionality. In this
+ 133:/usr/lib/avr/include/util/delay.h ****    mode _delay_ms() will work with a resolution of 1/10 ms, providing
+ 134:/usr/lib/avr/include/util/delay.h ****    delays up to 6.5535 seconds (independent from CPU frequency).  The
+ 135:/usr/lib/avr/include/util/delay.h ****    user will not be informed about decreased resolution.
+ 136:/usr/lib/avr/include/util/delay.h **** 
+ 137:/usr/lib/avr/include/util/delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles()
+ 138:/usr/lib/avr/include/util/delay.h ****    support, maximal possible delay is 4294967.295 ms/ F_CPU in MHz. For
+ 139:/usr/lib/avr/include/util/delay.h ****    values greater than the maximal possible delay, overflows results in
+ 140:/usr/lib/avr/include/util/delay.h ****    no delay i.e., 0ms.
+ 141:/usr/lib/avr/include/util/delay.h **** 
+ 142:/usr/lib/avr/include/util/delay.h ****    Conversion of \c __ms into clock cycles may not always result in
+ 143:/usr/lib/avr/include/util/delay.h ****    integer.  By default, the clock cycles rounded up to next
+ 144:/usr/lib/avr/include/util/delay.h ****    integer. This ensures that the user gets at least \c __ms
+ 145:/usr/lib/avr/include/util/delay.h ****    microseconds of delay.
+ 146:/usr/lib/avr/include/util/delay.h **** 
+ 147:/usr/lib/avr/include/util/delay.h ****    Alternatively, by defining the macro \c __DELAY_ROUND_DOWN__, or
+ 148:/usr/lib/avr/include/util/delay.h ****    \c __DELAY_ROUND_CLOSEST__, before including this header file, the
+ 149:/usr/lib/avr/include/util/delay.h ****    algorithm can be made to round down, or round to closest integer,
+ 150:/usr/lib/avr/include/util/delay.h ****    respectively.
+ 151:/usr/lib/avr/include/util/delay.h **** 
+ 152:/usr/lib/avr/include/util/delay.h ****    \note
+ 153:/usr/lib/avr/include/util/delay.h **** 
+ 154:/usr/lib/avr/include/util/delay.h ****    The implementation of _delay_ms() based on
+ 155:/usr/lib/avr/include/util/delay.h ****    __builtin_avr_delay_cycles() is not backward compatible with older
+ 156:/usr/lib/avr/include/util/delay.h ****    implementations.  In order to get functionality backward compatible
+ 157:/usr/lib/avr/include/util/delay.h ****    with previous versions, the macro \c "__DELAY_BACKWARD_COMPATIBLE__"
+ 158:/usr/lib/avr/include/util/delay.h ****    must be defined before including this header file. Also, the
+ 159:/usr/lib/avr/include/util/delay.h ****    backward compatible algorithm will be chosen if the code is
+ 160:/usr/lib/avr/include/util/delay.h ****    compiled in a <em>freestanding environment</em> (GCC option
+ 161:/usr/lib/avr/include/util/delay.h ****    \c -ffreestanding), as the math functions required for rounding are
+ 162:/usr/lib/avr/include/util/delay.h ****    not available to the compiler then.
+ 163:/usr/lib/avr/include/util/delay.h **** 
+ 164:/usr/lib/avr/include/util/delay.h ****  */
+ 165:/usr/lib/avr/include/util/delay.h **** void
+ 166:/usr/lib/avr/include/util/delay.h **** _delay_ms(double __ms)
+ 167:/usr/lib/avr/include/util/delay.h **** {
+ 168:/usr/lib/avr/include/util/delay.h **** 	double __tmp ;
+ 169:/usr/lib/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 170:/usr/lib/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 171:/usr/lib/avr/include/util/delay.h ****   __STDC_HOSTED__
+ 172:/usr/lib/avr/include/util/delay.h **** 	uint32_t __ticks_dc;
+ 173:/usr/lib/avr/include/util/delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
+ 174:/usr/lib/avr/include/util/delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
+ 175:/usr/lib/avr/include/util/delay.h **** 
+ 176:/usr/lib/avr/include/util/delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
+ 177:/usr/lib/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
+ 178:/usr/lib/avr/include/util/delay.h **** 
+GAS LISTING /tmp/ccbi08xe.s 			page 14
+
+
+ 179:/usr/lib/avr/include/util/delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
+ 180:/usr/lib/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
+ 181:/usr/lib/avr/include/util/delay.h **** 
+ 182:/usr/lib/avr/include/util/delay.h **** 	#else
+ 183:/usr/lib/avr/include/util/delay.h **** 		//round up by default
+ 184:/usr/lib/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+ 185:/usr/lib/avr/include/util/delay.h **** 	#endif
+ 186:/usr/lib/avr/include/util/delay.h **** 
+ 187:/usr/lib/avr/include/util/delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+ 298               		.stabn	68,0,187,.LM33-.LFBB2
+ 299               	.LM33:
+ 300 00a2 A7EE      		ldi r26,lo8(999)
+ 301 00a4 B3E0      		ldi r27,hi8(999)
+ 302 00a6 1197      	1:	sbiw r26,1
+ 303 00a8 01F4      		brne 1b
+ 304 00aa 00C0      		rjmp .
+ 305 00ac 0000      		nop
+ 306               	.LBE24:
+ 307               	.LBE23:
+ 308               		.stabs	"main.c",132,0,0,.Ltext2
+ 309               	.Ltext2:
+ 172:main.c        ****             // if(pointer1 == 10){ // for ponter1 offset
+ 310               		.stabn	68,0,172,.LM34-.LFBB2
+ 311               	.LM34:
+ 312 00ae 2F5F      		subi r18,-1
+ 313 00b0 3F4F      		sbci r19,-1
+ 314 00b2 2436      		cpi r18,100
+ 315 00b4 3105      		cpc r19,__zero_reg__
+ 316 00b6 01F4      		brne .L15
+ 317               	.LBE22:
+ 189:main.c        ****             for(int p=0; p<LED_BLINK_CNT; p++){
+ 318               		.stabn	68,0,189,.LM35-.LFBB2
+ 319               	.LM35:
+ 320 00b8 80FF      		sbrs r24,0
+ 321 00ba 00C0      		rjmp .L16
+ 322               	.L18:
+ 164:main.c        ****      
+ 323               		.stabn	68,0,164,.LM36-.LFBB2
+ 324               	.LM36:
+ 325 00bc 0196      		adiw r24,1
+ 326 00be 3296      		adiw r30,2
+ 327 00c0 00C0      		rjmp .L13
+ 328               	.L16:
+ 329 00c2 25E0      		ldi r18,lo8(5)
+ 330 00c4 30E0      		ldi r19,0
+ 331               	.L17:
+ 332               	.LBB25:
+ 191:main.c        ****                PORTB |= (1 << PIN_LED1); //led on
+ 333               		.stabn	68,0,191,.LM37-.LFBB2
+ 334               	.LM37:
+ 335 00c6 C49A      		sbi 0x18,4
+ 192:main.c        ****                _delay_ms(1 * delay_multi); 
+ 336               		.stabn	68,0,192,.LM38-.LFBB2
+ 337               	.LM38:
+ 338 00c8 C59A      		sbi 0x18,5
+ 339               	.LBB26:
+ 340               	.LBB27:
+GAS LISTING /tmp/ccbi08xe.s 			page 15
+
+
+ 341               		.stabs	"/usr/lib/avr/include/util/delay.h",132,0,0,.Ltext3
+ 342               	.Ltext3:
+ 343               		.stabn	68,0,187,.LM39-.LFBB2
+ 344               	.LM39:
+ 345 00ca A5EA      		ldi r26,lo8(3749)
+ 346 00cc BEE0      		ldi r27,hi8(3749)
+ 347 00ce 1197      	1:	sbiw r26,1
+ 348 00d0 01F4      		brne 1b
+ 349 00d2 00C0      		rjmp .
+ 350 00d4 0000      		nop
+ 351               	.LBE27:
+ 352               	.LBE26:
+ 353               		.stabs	"main.c",132,0,0,.Ltext4
+ 354               	.Ltext4:
+ 194:main.c        ****                PORTB &= ~(1 << PIN_LED1); //led off
+ 355               		.stabn	68,0,194,.LM40-.LFBB2
+ 356               	.LM40:
+ 357 00d6 C498      		cbi 0x18,4
+ 195:main.c        ****                _delay_ms(1 * delay_multi);
+ 358               		.stabn	68,0,195,.LM41-.LFBB2
+ 359               	.LM41:
+ 360 00d8 C598      		cbi 0x18,5
+ 361               	.LBB28:
+ 362               	.LBB29:
+ 363               		.stabs	"/usr/lib/avr/include/util/delay.h",132,0,0,.Ltext5
+ 364               	.Ltext5:
+ 365               		.stabn	68,0,187,.LM42-.LFBB2
+ 366               	.LM42:
+ 367 00da A5EA      		ldi r26,lo8(3749)
+ 368 00dc BEE0      		ldi r27,hi8(3749)
+ 369 00de 1197      	1:	sbiw r26,1
+ 370 00e0 01F4      		brne 1b
+ 371 00e2 00C0      		rjmp .
+ 372 00e4 0000      		nop
+ 373 00e6 2150      		subi r18,1
+ 374 00e8 3109      		sbc r19,__zero_reg__
+ 375               	.LBE29:
+ 376               	.LBE28:
+ 377               		.stabs	"main.c",132,0,0,.Ltext6
+ 378               	.Ltext6:
+ 190:main.c        ****                PORTB |= (1 << PIN_LED0); //led on
+ 379               		.stabn	68,0,190,.LM43-.LFBB2
+ 380               	.LM43:
+ 381 00ea 01F4      		brne .L17
+ 382 00ec 00C0      		rjmp .L18
+ 383               	.L24:
+ 384               	.LBE25:
+ 385               	.LBE21:
+ 205:main.c        ****       PORTA &= ~(1 << PIN_SPEAK0); //speaker 0 off
+ 386               		.stabn	68,0,205,.LM44-.LFBB2
+ 387               	.LM44:
+ 388 00ee C498      		cbi 0x18,4
+ 206:main.c        ****       TCCR1A &= ~(1<<COM1B1); // PWM off
+ 389               		.stabn	68,0,206,.LM45-.LFBB2
+ 390               	.LM45:
+ 391 00f0 DE98      		cbi 0x1b,6
+ 207:main.c        ****       // PORTA &= ~(1 << PIN_SPEAK1); //speaker 1 off
+GAS LISTING /tmp/ccbi08xe.s 			page 16
+
+
+ 392               		.stabn	68,0,207,.LM46-.LFBB2
+ 393               	.LM46:
+ 394 00f2 80B7      		in r24,0x30
+ 395 00f4 8F7D      		andi r24,lo8(-33)
+ 396 00f6 80BF      		out 0x30,r24
+ 397               	.LBB30:
+ 398               	.LBB31:
+ 399               		.stabs	"/usr/lib/avr/include/util/delay.h",132,0,0,.Ltext7
+ 400               	.Ltext7:
+ 401               		.stabn	68,0,187,.LM47-.LFBB2
+ 402               	.LM47:
+ 403 00f8 BFEE      		ldi r27,lo8(149999)
+ 404 00fa 29E4      		ldi r18,hi8(149999)
+ 405 00fc 82E0      		ldi r24,hlo8(149999)
+ 406 00fe B150      	1:	subi r27,1
+ 407 0100 2040      		sbci r18,0
+ 408 0102 8040      		sbci r24,0
+ 409 0104 01F4      		brne 1b
+ 410 0106 00C0      		rjmp .
+ 411 0108 0000      		nop
+ 412               	.LBE31:
+ 413               	.LBE30:
+ 414               		.stabs	"main.c",132,0,0,.Ltext8
+ 415               	.Ltext8:
+ 156:main.c        ****       // loop the psuedo-radom array
+ 416               		.stabn	68,0,156,.LM48-.LFBB2
+ 417               	.LM48:
+ 418 010a 2196      		adiw r28,1
+ 419 010c C530      		cpi r28,5
+ 420 010e D105      		cpc r29,__zero_reg__
+ 421 0110 01F0      		breq .+2
+ 422 0112 00C0      		rjmp .L20
+ 423               	/* epilogue start */
+ 424               	.LBE20:
+ 214:main.c        **** 
+ 425               		.stabn	68,0,214,.LM49-.LFBB2
+ 426               	.LM49:
+ 427 0114 DF91      		pop r29
+ 428 0116 CF91      		pop r28
+ 429 0118 0895      		ret
+ 430               		.size	animal_det, .-animal_det
+ 431               		.stabs	"q:r(0,1)",64,0,156,28
+ 432               		.stabn	192,0,0,.LBB20-.LFBB2
+ 433               		.stabs	"x:r(0,1)",64,0,164,24
+ 434               		.stabn	192,0,0,.LBB21-.LFBB2
+ 435               		.stabs	"n:r(0,1)",64,0,172,18
+ 436               		.stabn	192,0,0,.LBB22-.LFBB2
+ 437               		.stabn	224,0,0,.LBE22-.LFBB2
+ 438               		.stabn	224,0,0,.LBE21-.LFBB2
+ 439               		.stabn	224,0,0,.LBE20-.LFBB2
+ 440               	.Lscope2:
+ 441               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 442               		.stabd	78,0,0
+ 443               		.stabs	"initialize:F(0,49)",36,0,295,initialize
+ 444               	.global	initialize
+ 445               		.type	initialize, @function
+ 446               	initialize:
+GAS LISTING /tmp/ccbi08xe.s 			page 17
+
+
+ 447               		.stabd	46,0,0
+ 256:main.c        ****    }
+ 257:main.c        **** } 
+ 258:main.c        **** 
+ 259:main.c        **** 
+ 260:main.c        **** ////////////////////////////
+ 261:main.c        **** // Interrupt on INT0
+ 262:main.c        **** //  to use other MCU you need to change this
+ 263:main.c        **** //    INT0_vect: interrupt 0
+ 264:main.c        **** //    IO_PINS_vect: pin change interrupt (all?)
+ 265:main.c        **** 
+ 266:main.c        **** // ISR(IO_PINS_vect){ // to use other MCU you need to change this
+ 267:main.c        **** //    //   See: https://www.gnu.org/savannah-checkouts/non-gnu/avr-libc/user-manual/group__avr__int
+ 268:main.c        **** //
+ 269:main.c        **** //    // if interrupt and one of PIRs active
+ 270:main.c        **** //    if( (PINB & (1 << PIN_PIRB) || PINA & (1 << PIN_PIRA) ) && !DISABLE_IRQ && !ALL_ON){
+ 271:main.c        **** //
+ 272:main.c        **** //       // (PINA & (1 << PIN_MODE_SW)){{
+ 273:main.c        **** //
+ 274:main.c        **** //          // activate deturrent
+ 275:main.c        **** //          animal_det();
+ 276:main.c        **** //       //}}
+ 277:main.c        **** //
+ 278:main.c        **** //    }
+ 279:main.c        **** // }
+ 280:main.c        **** 
+ 281:main.c        **** // ISR (TIMER1_OVF1_vect)
+ 282:main.c        **** // { 
+ 283:main.c        **** //    // note vector name is defined in avr/include/avr/iotn26.h
+ 284:main.c        **** // /* Toggle a pin on timer overflow */
+ 285:main.c        **** //    TCNT1 = 252;
+ 286:main.c        **** //    if(speak0){
+ 287:main.c        **** //       PORTA ^= (1<<PIN_LED_PWR_ON); 
+ 288:main.c        **** //    }else{
+ 289:main.c        **** //             PORTA &= ~(1<<PIN_LED_PWR_ON); 
+ 290:main.c        **** //    }
+ 291:main.c        **** // }
+ 292:main.c        **** 
+ 293:main.c        **** /////////////////
+ 294:main.c        **** // Initalize
+ 295:main.c        **** void initialize(void){
+ 448               		.stabn	68,0,295,.LM50-.LFBB3
+ 449               	.LM50:
+ 450               	.LFBB3:
+ 451               	/* prologue: function */
+ 452               	/* frame size = 0 */
+ 453               	/* stack size = 0 */
+ 454               	.L__stack_usage = 0
+ 296:main.c        ****    // set PORTA to all outputs, except PA3
+ 297:main.c        ****    // PORTB is already inputs
+ 298:main.c        ****    // to use other MCU you need to change this
+ 299:main.c        ****    DDRA = 0b11110110; // set PORTA to all outputs, except PA3, PA0 // to use other MCU you need to 
+ 455               		.stabn	68,0,299,.LM51-.LFBB3
+ 456               	.LM51:
+ 457 011a 86EF      		ldi r24,lo8(-10)
+ 458 011c 8ABB      		out 0x1a,r24
+ 300:main.c        **** 
+GAS LISTING /tmp/ccbi08xe.s 			page 18
+
+
+ 301:main.c        ****    // Set LED as output
+ 302:main.c        ****    DDRB |= (1<<PIN_LED0);
+ 459               		.stabn	68,0,302,.LM52-.LFBB3
+ 460               	.LM52:
+ 461 011e BC9A      		sbi 0x17,4
+ 303:main.c        ****    DDRB |= (1<<PIN_LED1);
+ 462               		.stabn	68,0,303,.LM53-.LFBB3
+ 463               	.LM53:
+ 464 0120 BD9A      		sbi 0x17,5
+ 304:main.c        ****    DDRB |= (1<<PB3);
+ 465               		.stabn	68,0,304,.LM54-.LFBB3
+ 466               	.LM54:
+ 467 0122 BB9A      		sbi 0x17,3
+ 305:main.c        **** 	
+ 306:main.c        ****    // ATtiny26
+ 307:main.c        ****    //    MCUCR: MCU Control Register
+ 308:main.c        ****    //       ISC01=1 ISC00=1 The rising edge of INT0 generates an interrupt request.
+ 309:main.c        ****    //    GIMSK: General Interrupt Mask Register
+ 310:main.c        ****    //       INT0: interrupt0
+ 311:main.c        ****    //       PCIE1: pin change interrupt 1  PB[7:4], PA[7:6] and PA[3]
+ 312:main.c        ****    //       PCIE0:  pin change interrupt 0 PB[3:0]
+ 313:main.c        ****    //    GIFR: General Interrupt Flag Register
+ 314:main.c        ****    //       GIFR(PCIF) flag when PC interrupt
+ 315:main.c        ****    //    INTF0: 6
+ 316:main.c        ****  // Using PB4 and PB5 for PCINT1
+ 317:main.c        ****    // MCUCR |= (1<<ISC00); //rising edge // to use other MCU you need to change this
+ 318:main.c        ****    // MCUCR |= (1<<ISC01); //rising edge // to use other MCU you need to change this
+ 319:main.c        ****    // GIMSK |= (1<<INT0); // enable INT0 // to use other MCU you need to change this
+ 320:main.c        ****    // GIMSK |= (1<<PCIE1); // enable PCINT1 // to use other MCU you need to change this
+ 321:main.c        **** 
+ 322:main.c        ****    // timer0
+ 323:main.c        ****    // CS02=1, CS01=0, CS00=1: CLK/1024
+ 324:main.c        ****    // TCCR0
+ 325:main.c        **** 
+ 326:main.c        ****    // /* Timer0  */
+ 327:main.c        ****    // TCCR0 = (1<<CS00);
+ 328:main.c        ****    // /* Clear overflow flag */
+ 329:main.c        ****    // TIFR = 1<<TOV0;
+ 330:main.c        ****    // /* Enable Overflow Interrupt */
+ 331:main.c        ****    // TIMSK = 1<<TOIE0;
+ 332:main.c        **** 
+ 333:main.c        ****    // /* Timer1, asyncronous, fast periferial clk */
+ 334:main.c        ****    // PLLCSR = (1<<PCKE); //FPK 64MHz
+ 335:main.c        ****    // TCCR1B = (1<<CS10); //(1<<CS13)|(1<<CS12)|(1<<CS11)|(1<<CS10); // clk divider
+ 336:main.c        ****    // TIMSK = (1<<TOIE1); // enable overflow interrupt
+ 337:main.c        **** 
+ 338:main.c        ****    PLLCSR = (1<<PCKE)|(1<<PLLE); //FPK/PLL on, 64MHz
+ 468               		.stabn	68,0,338,.LM55-.LFBB3
+ 469               	.LM55:
+ 470 0124 86E0      		ldi r24,lo8(6)
+ 471 0126 89BD      		out 0x29,r24
+ 339:main.c        ****    TCCR1A = (1<<COM1B1)|(1<<PWM1B); //PWM enabled
+ 472               		.stabn	68,0,339,.LM56-.LFBB3
+ 473               	.LM56:
+ 474 0128 81E2      		ldi r24,lo8(33)
+ 475 012a 80BF      		out 0x30,r24
+ 340:main.c        ****    TCCR1B = (1<<CS12)|(1<<CS10); //(1<<CS13)|(1<<CS12)|(1<<CS11)|(1<<CS10); // clk divider 20kHz
+GAS LISTING /tmp/ccbi08xe.s 			page 19
+
+
+ 476               		.stabn	68,0,340,.LM57-.LFBB3
+ 477               	.LM57:
+ 478 012c 85E0      		ldi r24,lo8(5)
+ 479 012e 8FBD      		out 0x2f,r24
+ 341:main.c        ****    OCR1C = 132; // 30kHz 
+ 480               		.stabn	68,0,341,.LM58-.LFBB3
+ 481               	.LM58:
+ 482 0130 84E8      		ldi r24,lo8(-124)
+ 483 0132 8BBD      		out 0x2b,r24
+ 342:main.c        ****    OCR1B = 100; // 50% duty
+ 484               		.stabn	68,0,342,.LM59-.LFBB3
+ 485               	.LM59:
+ 486 0134 84E6      		ldi r24,lo8(100)
+ 487 0136 8CBD      		out 0x2c,r24
+ 343:main.c        ****    // COM1B1 = 0 to stop?
+ 344:main.c        **** 
+ 345:main.c        ****    // CS13..CS10 = 0101
+ 346:main.c        ****    // OCR1C = 199
+ 347:main.c        ****    // PCKE = 1 && PLLE = 1
+ 348:main.c        ****    // FPK on
+ 349:main.c        ****    // OC1B on
+ 350:main.c        ****    // PWM1B: Pulse Width Modulator B Enabled
+ 351:main.c        **** 
+ 352:main.c        ****    sei();     // Enable global interrupts by setting global interrupt enable bit in SREG
+ 488               		.stabn	68,0,352,.LM60-.LFBB3
+ 489               	.LM60:
+ 490               	/* #APP */
+ 491               	 ;  352 "main.c" 1
+ 492 0138 7894      		sei
+ 493               	 ;  0 "" 2
+ 494               	/* #NOAPP */
+ 495 013a 0895      		ret
+ 496               		.size	initialize, .-initialize
+ 497               	.Lscope3:
+ 498               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 499               		.stabd	78,0,0
+ 500               		.section	.text.startup,"ax",@progbits
+ 501               		.stabs	"main:F(0,1)",36,0,363,main
+ 502               	.global	main
+ 503               		.type	main, @function
+ 504               	main:
+ 505               		.stabd	46,0,0
+ 353:main.c        **** 
+ 354:main.c        **** 
+ 355:main.c        ****    // turn on LED indicator to show MCU active
+ 356:main.c        ****    // PORTA |= (1<<PIN_LED_PWR_ON); // to use other MCU you need to change this
+ 357:main.c        **** 
+ 358:main.c        **** }
+ 359:main.c        **** 
+ 360:main.c        **** 
+ 361:main.c        **** ///////////
+ 362:main.c        **** // Main
+ 363:main.c        **** int main(void)
+ 364:main.c        **** {
+ 506               		.stabn	68,0,364,.LM61-.LFBB4
+ 507               	.LM61:
+ 508               	.LFBB4:
+GAS LISTING /tmp/ccbi08xe.s 			page 20
+
+
+ 509               	/* prologue: function */
+ 510               	/* frame size = 0 */
+ 511               	/* stack size = 0 */
+ 512               	.L__stack_usage = 0
+ 365:main.c        ****    initialize();
+ 513               		.stabn	68,0,365,.LM62-.LFBB4
+ 514               	.LM62:
+ 515 0000 00D0      		rcall initialize
+ 516               	.L27:
+ 366:main.c        **** 
+ 367:main.c        **** 	while(1) {
+ 368:main.c        ****       if(ALL_ON){ // Mode: all lights and sound on (debug forced)
+ 369:main.c        ****          PORTB |= (1 << PIN_LED0);
+ 370:main.c        ****          PORTB |= (1 << PIN_LED1);
+ 371:main.c        ****          PORTA |= (1 << PIN_SPEAK0);
+ 372:main.c        ****          PORTA |= (1 << PIN_SPEAK1); 
+ 373:main.c        ****       }else{ // Mode: Constant beeping mode (debug forced)
+ 374:main.c        ****          animal_det();
+ 517               		.stabn	68,0,374,.LM63-.LFBB4
+ 518               	.LM63:
+ 519 0002 00D0      		rcall animal_det
+ 520               	.LBB32:
+ 521               	.LBB33:
+ 522               		.stabs	"/usr/lib/avr/include/util/delay.h",132,0,0,.Ltext9
+ 523               	.Ltext9:
+ 524               		.stabn	68,0,187,.LM64-.LFBB4
+ 525               	.LM64:
+ 526 0004 2FE7      		ldi r18,lo8(1999999)
+ 527 0006 84E8      		ldi r24,hi8(1999999)
+ 528 0008 9EE1      		ldi r25,hlo8(1999999)
+ 529 000a 2150      	1:	subi r18,1
+ 530 000c 8040      		sbci r24,0
+ 531 000e 9040      		sbci r25,0
+ 532 0010 01F4      		brne 1b
+ 533 0012 00C0      		rjmp .
+ 534 0014 0000      		nop
+ 535               	.LBE33:
+ 536               	.LBE32:
+ 537               		.stabs	"main.c",132,0,0,.Ltext10
+ 538               	.Ltext10:
+ 375:main.c        ****       // }else if(PINA & (1 << PIN_MODE_SW)){ // Mode: (switch set)
+ 376:main.c        ****       //    animal_det();
+ 377:main.c        ****       // }
+ 378:main.c        ****       }
+ 379:main.c        ****       // else if( time_counter > TIMED_BEEP_INTERVAL * 60000 ){//TIMED_BEEP_INTERVAL * MINUTE_FUDGE
+ 380:main.c        ****          // animal_det();
+ 381:main.c        ****          // time_counter = 0; // reset counter
+ 382:main.c        ****       // }
+ 383:main.c        ****       _delay_ms(10000); //LOOP_DELAY);
+ 384:main.c        ****       time_counter++;
+ 539               		.stabn	68,0,384,.LM65-.LFBB4
+ 540               	.LM65:
+ 541 0016 8091 0000 		lds r24,time_counter
+ 542 001a 9091 0000 		lds r25,time_counter+1
+ 543 001e A091 0000 		lds r26,time_counter+2
+ 544 0022 B091 0000 		lds r27,time_counter+3
+ 545 0026 0196      		adiw r24,1
+GAS LISTING /tmp/ccbi08xe.s 			page 21
+
+
+ 546 0028 A11D      		adc r26,__zero_reg__
+ 547 002a B11D      		adc r27,__zero_reg__
+ 548 002c 8093 0000 		sts time_counter,r24
+ 549 0030 9093 0000 		sts time_counter+1,r25
+ 550 0034 A093 0000 		sts time_counter+2,r26
+ 551 0038 B093 0000 		sts time_counter+3,r27
+ 552 003c 00C0      		rjmp .L27
+ 553               		.size	main, .-main
+ 554               	.Lscope4:
+ 555               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 556               		.stabd	78,0,0
+ 557               	.global	beep_length
+ 558               		.section	.rodata
+ 559               		.type	beep_length, @object
+ 560               		.size	beep_length, 40
+ 561               	beep_length:
+ 562 0000 0B00      		.word	11
+ 563 0002 4800      		.word	72
+ 564 0004 2600      		.word	38
+ 565 0006 2A00      		.word	42
+ 566 0008 4100      		.word	65
+ 567 000a 1600      		.word	22
+ 568 000c 2F00      		.word	47
+ 569 000e 5800      		.word	88
+ 570 0010 1600      		.word	22
+ 571 0012 3800      		.word	56
+ 572 0014 0900      		.word	9
+ 573 0016 3700      		.word	55
+ 574 0018 0C00      		.word	12
+ 575 001a 4D00      		.word	77
+ 576 001c 2900      		.word	41
+ 577 001e 6300      		.word	99
+ 578 0020 5800      		.word	88
+ 579 0022 0A00      		.word	10
+ 580 0024 1E00      		.word	30
+ 581 0026 3200      		.word	50
+ 582               	.global	time_counter
+ 583               		.section .bss
+ 584               		.type	time_counter, @object
+ 585               		.size	time_counter, 4
+ 586               	time_counter:
+ 587 0000 0000 0000 		.zero	4
+ 588               		.stabs	"time_counter:G(0,3)",32,0,99,0
+ 589               		.stabs	"beep_length:G(0,50)=ar(0,51)=r(0,51);0;0177777;;0;19;(0,52)=k(0,1)",32,0,110,0
+ 590               		.text
+ 591               		.stabs	"",100,0,0,.Letext0
+ 592               	.Letext0:
+ 593               		.ident	"GCC: (GNU) 5.4.0"
+ 594               	.global __do_copy_data
+ 595               	.global __do_clear_bss
+GAS LISTING /tmp/ccbi08xe.s 			page 22
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 main.c
+     /tmp/ccbi08xe.s:2      *ABS*:000000000000003d __SP_L__
+     /tmp/ccbi08xe.s:3      *ABS*:000000000000003f __SREG__
+     /tmp/ccbi08xe.s:4      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccbi08xe.s:5      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccbi08xe.s:107    .text:0000000000000000 pwm_freq_change
+     /tmp/ccbi08xe.s:229    .text:0000000000000068 animal_det
+     /tmp/ccbi08xe.s:561    .rodata:0000000000000000 beep_length
+     /tmp/ccbi08xe.s:446    .text:000000000000011a initialize
+     /tmp/ccbi08xe.s:504    .text.startup:0000000000000000 main
+     /tmp/ccbi08xe.s:586    .bss:0000000000000000 time_counter
+
+UNDEFINED SYMBOLS
+__do_copy_data
+__do_clear_bss
