@@ -56,26 +56,25 @@
 // 6 GND
 // 7 PB4 (ADC7/XTAL1/PCINT1)             [X]
 // 8 PB5 (ADC8/XTAL2/PCINT1)             [X]
-// 9 PB6 (ADC9/INT0/T0/PCINT1)           [PIR1]
+// 9 PB6 (ADC9/INT0/T0/PCINT1)           
 // 10 PB7 (ADC10/RESET/PCINT1/PROGRAMER) [PROGRAMER]
 
-// 20 PA0 (ADC0)                        [MODE SWITCH] 
+// 20 PA0 (ADC0)                         
 // 19 PA1 (ADC1)                        [X]
 // 18 PA2 (ADC2)                        [X]  
-// 17 PA3 (AREF/PCINT1)                 [PIR0 SENSOR]  
+// 17 PA3 (AREF/PCINT1)                   
 // 16 GND
 // 15 AVCC
-// 14 PA4 (ADC3)                        [MCU ACTIVE LED]
+// 14 PA4 (ADC3)                        [LED FLASH]
 // 13 PA5 (ADC4)                        [LED FLASH]
-// 12 PA6 (ADC5/AIN0/PCINT1)            [SPEAKER0]
-// 11 PA7 (ADC6/AIN1/PCINT1)            [SPEAKER1]
+// 12 PA6 (ADC5/AIN0/PCINT1)            [SPEAKER ON]
+// 11 PA7 (ADC6/AIN1/PCINT1)            
 //
 // notes: Vih-min for pins 7,8 are 0.8Vcc, 
 //   all others are 0.6Vcc
 //   So at 5V pins 7,8 need to be >4.0V
 //
-#define PIN_SPEAK0 PA6 // ultra-sonic speaker0, output
-#define PIN_SPEAK1 PA7 // ultra-sonic speaker1, output
+#define PIN_SPEAK0 PA6 // ultra-sonic speaker0, output, not needed, usefull for debugging
 
 #define PIN_LED0 PB4 // flashing LED, output, drives 40mA
 #define PIN_LED1 PB5 // flashing LED, output, drives 40mA
@@ -84,15 +83,13 @@
 
 // #define PIN_MODE_SW PA0 // Mode switch
 
-#define PIN_PIRA PA3 // PIR
-#define PIN_PIRB PB6 // PIR
 
 
 
 
 
 
-//////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
 // Global vars
 //
 
@@ -218,15 +215,26 @@ void animal_det(void){
 // Frequency changing
 //   changing PWM frequency to psuedo random list
 //
+//      /* 30kHz - 0101 132; */
+//      TCCR1B |= (1<<CS10);
+//      OCR1C = 132;
+//      OCR1B = 50; //65;
+//
+//      /* 34kHz - 0101 110; */
+//      TCCR1B |= (1<<CS10);
+//      OCR1C = 120;
+//      OCR1B = 45; //55;
+//
+
 void pwm_freq_change(int mode){
    if(mode == 0){
-      /* 30kHz - 0101 132; */
-      TCCR1B |= (1<<CS10);
-      OCR1C = 132;
-      OCR1B = 50; //65;
+      /* 58kHz - 0100 159 */
+      TCCR1B &= ~(1<<CS10);
+      OCR1C = 140;   
+      OCR1B = 60; //80;
    }else if (mode == 1)
    {
-      /* 40kHz - 0100 199 */
+      /* 41kHz - 0100 199 */
       TCCR1B &= ~(1<<CS10);
       OCR1C = 199;   
       OCR1B = 80; //100;
@@ -238,16 +246,16 @@ void pwm_freq_change(int mode){
       OCR1B = 45;//; //55;
    }else if (mode == 3)
    {
-      /* 50kHz - 0100 159 */
+      /* 51kHz - 0100 159 */
       TCCR1B &= ~(1<<CS10);
       OCR1C = 159;   
       OCR1B = 70; //80;
    }else if (mode == 4)
    {
-      /* 39kHz - 0101 110; */
-      TCCR1B |= (1<<CS10);
-      OCR1C = 120;
-      OCR1B = 45; //55;
+      /* 43kHz - 0100 199 */
+      TCCR1B &= ~(1<<CS10);
+      OCR1C = 189;   
+      OCR1B = 80; //100;
    }else{
       /* shouldn't happen but... ~30kHz - 0101 132; */
       TCCR1B |= (1<<CS10);
@@ -369,7 +377,7 @@ int main(void)
          PORTB |= (1 << PIN_LED0);
          PORTB |= (1 << PIN_LED1);
          PORTA |= (1 << PIN_SPEAK0);
-         PORTA |= (1 << PIN_SPEAK1); 
+         // PORTA |= (1 << PIN_SPEAK1); 
       }else{ // Mode: Constant beeping mode (debug forced)
          animal_det();
       // }else if(PINA & (1 << PIN_MODE_SW)){ // Mode: (switch set)
